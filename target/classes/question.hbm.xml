@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sys.entity.Question" table="question">
+		<id name="id" type="int">
+			<column name="naireid" />
+			<!-- 采用数据库提供的主键生成机制。如DB2、SQL Server、MySQL 中的主键生成机制 -->
+			<generator class="identity" />
+		</id>
+		<property name="q1" type="java.lang.String">
+			<column name="question1" />
+		</property>
+		<property name="q2" type="java.lang.String">
+			<column name="question2" />
+		</property>
+		<!-- property name="address" type="java.lang.String"> <column name="address" 
+			/> </property> <property name="email" type="java.lang.String"> <column name="email" 
+			/> </property> <property name="level" type="int"> <column name="level" /> 
+			</property -->
+	</class>
+</hibernate-mapping>
